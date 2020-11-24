@@ -1,0 +1,198 @@
+ 
+
+
+Title :Online Medical Passport
+Group member:Amey Patil
+	            Kadam Balaji
+List Of Actions:
+	 1)creating Pojos of Admin,Doctor and User.
+	 2)Crud operation of inesert ,update for Doctors
+	3)All Crud operations for  inesert ,update,Select,Delete for Admin
+	4)Crud operation of select for User
+	
+Purpose of project:
+
+ 	This document is meant to highlight the features of OMP, so as to serve as a guide to the developers  
+                  on one hand and a software validation document for the prospective client on the other.
+                The Online Medical Passport (OMP) web application is intended to provide complete medical history record
+                 for every single citizen using get way through the internet. It will enable the government body to maintain a single single database 
+                for keeping a health record of every individual online. The user can get a medical check-up through local medical authority in the city . 
+               The administration module will take care of updating,deleting and creating new user record as well as adding new medical authority in a particular area.
+
+Scope of Project:
+	This Online Passport Management System gives the information medical history single citizen using get way through internet .Doctors allowed to use new Patient 
+	record or update the old patient record by updated helath check up. admin gives all authorities including delete the patient record who is no more.
+
+Definitions:
+	  OMP --> 	Online Medical Passport
+	   SRS --> 	Software Requirement Specification
+	   GUI---> 	Graphical User Interface
+	   Portal-->    Personalized Website
+	   Stackholder--> The person who will participate in the System. And Onwer of system
+				Ex.   Adminstrator , User ,Doctor
+	   UML--->	Software Engineering Notation for visualising System in the form diagrams
+ 	   SSL--->	Secure Socket Layer used for providing restricted access to application.
+	  AM---->Adminstration Management.
+           RDBMS -->    Relational Dadabase Management System.
+	 
+Additional Information:
+
+	The system work on internet server, so it will  be operated by any end user for the to get history of medical health .This system used the doctors are updated 
+           the medical history by check up .
+
+General Description:
+	The Online Medical  application helps to manage health record of every users and admins have authoritis to update the medical history 
+          or delete the record from the database 
+
+Functional Requirement:
+	This section provides requirement overview of the system. Various functional modules that can be implemented by 
+	the system will be-
+	
+	Description:
+	User can registerd through Authorised Doctors Only User cannot Registerd on site by its own 
+                  when he registered on web portal the Doctors fill the medical health information in user 
+	login .user only show the medical history by login with his id and password doctor can updated the user data after every check up.
+	Users health check up report generation will be saved in data base. and after the check up user gets Succusfull health check up msg on his Email-address.
+              The term client/server refers primarily to an architecture or logical division of responsibilities, 
+                  the client is the application (also known as the front-end), and the server is the RDBMS (also known as the back-end).
+                  A client/server system is a distributed system in which,Some sites are client sites and others are server sites.
+                  All the data resides at the server sites.
+                  All applications execute at the client sites.
+                
+
+
+	
+	
+
+Technical Issues:
+	This system will work on client-Server architecture. It will require an internet server.
+	The system should support some commonly used browser such as Chrome etc.
+	Interface Requirement Various interfaces for the product could be 
+	1.Login Page, 
+
+                    There will be a screen displaying information about Medical information and gives user mediacl history report afer login.
+
+	The Doctors may select the different options which will be open in another screen as
+		1.Login Page
+		2.Registration Form
+		3.Update Meidcal record.
+		4.history of the User.
+                                   5.Account  Settings
+                                  
+ Hardware Interface:
+	The System must run over the internet,
+        All the hardware shall require to connect to internet will be hardware interface for the system.
+		e.g. modem,  WAN, LAN
+		Specialized Server Infrastructure Hardware
+        The system should use distrubuted servers i.e cloud for managing large amount of data so as to make it appear as single unit for end-user.
+        The system should have proper clusters for backup.
+		
+ Software Interface:
+	The system is on server so it requires the any scripting language like JSP.
+        The system should be able to exchange data using XML, JASON or any advance technology.
+	The system require DataBase also for the store the any transaction of the system like MySql .
+	System also require DNS (Domain Name space) for the naming on the internet.
+	http://www.mediacalpassport.in
+	
+        At the end-user need web browser for interact with the system.
+
+
+
+Performance Requirement:
+	There is no  performance requirement in this system, because the server request  and respone to client is totally based on internet connection of enduser.
+
+Design Constrains:
+	This system should be developed using  Standard Web Page Development Tool , which conforms GUI standards such like HTML, XML, JSON,etc.
+        The system should support various RDMS and Cloud Technologies.
+
+
+
+Non-Functional Requirements
+
+1.Security:
+	  SSL
+	The System use SSL (Secure Socket Layer) in all trancations that include any confidential customer information.
+	The system must automcatically log out all customers after a period of inactivity.
+	The system should not leave any cookies on the customer's computer containing users's password.
+	The system's back-end servers shall  only be accessible to authenticated administrators.
+	Sensitive data will be encrypted  before being sent onver insecure connections like internet.
+        The proper firewalls should be developed to avoid intrusions from the internal or external sources.
+2.Reliability:
+	The system provides storage of all databases on redundant computers with  automatic switchover. 
+	The main pillar of reliability of the system  is the backup of the database 
+	which is conitinously maintained and update to reflect  the most recenet changes.
+
+
+3: Availability:
+	The system should be available at all times.meaning the user can access it using web browser, 
+        only restricted by the down time of the server on which the system runs.
+        In case of a of a hardware failure or database corruption, a replacement page will be shown. 
+	uptime : It mean 24 * 7 availability
+	100%--------------
+	99.9%
+	99.999%
+	99.9999%
+
+
+4: Maintainability:
+	A commercial database is used for maintaining the databae and application server takes care of the site. 
+	The maintainability can be done efficiently.
+
+5.Portability:
+	The application is HTML and scripting language based (Javascript). So the end user part is fully portable and any system using 
+	any web browser should be able to use the features of the system,including any hardware platform that is available 
+	or will be available in the futuer. 
+	An end-user  is used this system on an OS;either it is Windows or Linux.
+	The System shall run on PC, Laptops and PDA.etc.
+	The  technology should be transferable to different environments easily.
+
+6.Accessibility:
+        Only registered users should be allowed to process the orders after authentications.
+        Only GUI access of the system should be permited to end users.
+
+7.Policies:
+       The system should adhere to all the legal formalities of the particular countries.
+       The system should maintain security related to sensitive data.
+
+8.Efficiency:
+	The system should provide good throughput and response to multiple users without burdening the system by using appropriate number of servers.
+
+9.Safety:
+      Software should not harm ethical and environmental conditions of the end users machine.
+
+10.Modulariy:
+      The system should have user friendly interface. 
+      It should be easily updated,modified and reused. 
+
+
+Operational Scenario:
+	User Interaction
+	
+	The User want to see his Mediacal health history after login and update the medical history by doctor ater every mediacl check ups. 
+	
+	Doctor Interaction:
+	
+	Mediacl Staff Interaction:
+	
+	Admin interaction
+
+	
+Preliminary Schedule: :
+
+	
+	1.login.
+	2.Manage the users Medical history in database. 	
+	3.Add or update the discription medical check up .
+	4. Mangage User database.
+	5.Aprrove or regect the Doctors by admin.
+                  6.Logout.
+	7.Visit Site
+	8.Create new account
+	9.View account details
+	10.Delete medical History and Delete User  only authority to Admin.
+	11.Registration
+        1	12.Medical Team Support
+        
+
+
+
