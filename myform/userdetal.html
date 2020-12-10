@@ -1,0 +1,75 @@
+<html> <!-----html4--------  html5 ------->
+<head>
+<title>This is title</title>
+</head>
+<body > 
+<form action="getformdata.php" method="post">
+<table>
+<tr>
+<td></td><td> <input type="hidden" name="marks" id="m" value="98"/></td>
+</tr>
+<tr>
+<td>name</td><td> <input type="text" name="name" id="name"/></td>
+</tr>
+<tr>
+<td>addrees</td><td><textarea name="addr" rows="6" cols="25"></textarea></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender" id="m" value="male" checked>Male
+<input type="radio" name="gender" id="f" value="female">Female
+
+</td>
+</tr>
+<tr>
+<td>Degree</td>
+<td>
+<input type="radio" name="degree" id="mcs" value="mcs" checked>MCS
+<input type="radio" name="degree" id="btech" value="btech">BTech
+<input type="radio" name="degree" id="btech" value="bE">BE
+</td>
+</tr>
+<tr>
+<td>City</td>
+<td>
+<!--<select name="city[]" multiple size="4">-->
+<select name="city" id="city" size="4">
+   <option>----select one---</option>
+   <option value="pune">Pune</option>
+   <option value="mumbai">Mumbai</option>
+   <option value="Chenai">Chennai</option>
+   <option value="Banglore">Banglore</option>
+   <option value="Nashik">Nashik</option>
+   <option value="Kolhapur">Kolhapur</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>hobbies</td>
+<td>
+<p id="errmsg"></p>
+<input type="checkbox" name="hobbies[]" id="rh" value="reading"><label for="rh" > Reading</label>
+<input type="checkbox" name="hobbies[]" id="eh" value="Eating"><label for="eh">Eating</label>
+<input type="checkbox" name="hobbies[]" id="sh" value="Sleeping"><label for="sh">Sleeping</label>
+<input type="checkbox" name="hobbies[]" id="bh" value="Biking"><label for="bh">Biking</label>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="submit" name="btn" value="Submit"> &nbsp; &nbsp;&nbsp;  
+<input type="button" name="btn" value="Click me">  &nbsp; &nbsp;&nbsp; 
+<input type="reset" name="btn" value="cancel">  
+</td>
+</tr> 
+<tr>
+<td></td>
+<td>
+<a href="#">forgot password</a>&nbsp;&nbsp; &nbsp;&nbsp; <a href="#">Register me</a>
+</td>
+</tr> 
+</table>     
+</form>
+</body>
+</html>
